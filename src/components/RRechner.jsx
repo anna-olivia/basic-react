@@ -37,7 +37,7 @@ const RRechner = () => {
           type="number"
           value={zahl2}
           onChange={(e) => setZahl2(e.target.value)}
-          placeholder="Prozent eingeben"
+          placeholder="Zahl eingeben"
         />
       </div>
       <button onClick={berechnen}>Berechnen</button>

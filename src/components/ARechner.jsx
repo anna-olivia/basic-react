@@ -50,7 +50,7 @@ const ARechner = () => {
           type="number"
           value={zahl1}
           onChange={handleZahlChange(setZahl1)}
-          placeholder="Erste Zahl eingeben"
+          placeholder="Zahl eingeben"
         />
       </div>
       <div>
@@ -58,7 +58,7 @@ const ARechner = () => {
           type="number"
           value={zahl2}
           onChange={handleZahlChange(setZahl2)}
-          placeholder="Zweite Zahl eingeben"
+          placeholder="Zahl eingeben"
         />
       </div>
       <div className={styles.op}>
