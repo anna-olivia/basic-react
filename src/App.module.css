@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 5% 15%;
+
+}
+
+
+
+  @media screen and (min-width: 768px) {
+    .main {
+        padding: 5% 10%;
+        flex-direction: row;
+    }
+  }
+
+
+  @media screen and (min-width: 992px) {
+    .main {
+      justify-content: space-evenly;
+    }
+  }
+/* 
+@media screen and (min-width: 1200px) {
+    .main {
+    }
+} */

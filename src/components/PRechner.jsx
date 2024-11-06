@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Rechner.module.css";
 
 
-function Rechner() {
+const PRechner = () => {
   const [zahl, setZahl] = useState("");
   const [prozent, setProzent] = useState("");
   const [ergebnis, setErgebnis] = useState("");
@@ -11,8 +11,8 @@ function Rechner() {
     const zahlWert = parseFloat(zahl);
     const prozentWert = parseFloat(prozent);
 
-    if (isNaN(zahlWert) || isNaN(prozentWert)) {
-      setErgebnis("Bitte gültige Zahlen eingeben");
+    if (isNaN(zahlWert) && isNaN(prozentWert)) {
+      setErgebnis("Bitte gültige Zahlen ohne Maßeinheit eingeben");
       return;
     }
 
@@ -23,7 +23,7 @@ function Rechner() {
   return (
     <div className={styles.wrapper}>
       <h2>Prozentrechner</h2>
-      <div className>
+      <div>
         {/* <label name="zahl">Zahlenwert angeben:</label> */}
         <input
           id="zahl"
@@ -33,7 +33,7 @@ function Rechner() {
           placeholder="Zahl eingeben"
         />
       </div>
-      <div className>
+      <div>
         {/* <label name="zahl">Prozentwert angeben:</label> */}
         <input
           type="number"
@@ -44,10 +44,10 @@ function Rechner() {
       </div>
       <button onClick={berechnen}>Berechnen</button>
       <p>
-        Ergebnis: <span>{ergebnis}</span>
+        Ergebnis: <span>{ergebnis} €</span>
       </p>
     </div>
   );
 }
 
-export default Rechner;
+export default PRechner;

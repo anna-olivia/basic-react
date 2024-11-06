@@ -1,16 +1,14 @@
 .wrapper {
-  width: 25%;
-  margin: auto;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: none;
-
-  background: #EEF0F4;
-border-radius: 15%;
-box-shadow: inset 5.71px 5.71px 25px #D9DADE, inset -5.71px -5.71px 25px #FFFFFF;
+  background: #eef0f4;
+  border-radius: 15%;
+  box-shadow: inset 5.71px 5.71px 25px #d9dade,
+    inset -5.71px -5.71px 25px #ffffff;
 }
 
 .wrapper * {
@@ -43,4 +41,9 @@ box-shadow: inset 5.71px 5.71px 25px #D9DADE, inset -5.71px -5.71px 25px #FFFFFF
   color: #20b2aa;
   /* color: aquamarine; */
   font-weight: bolder;
+}
+
+.op {
+  display: flex;
+  gap: 0.5rem;
 }
